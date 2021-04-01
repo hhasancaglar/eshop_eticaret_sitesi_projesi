@@ -1,0 +1,44 @@
+﻿@model ShoppingCartViewModel
+
+@{
+    ViewData["Title"] = "Alışveriş Sepetim";
+}
+
+<h1>Alışveriş Sepetim</h1>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>Seçilen Miktar</th>
+            <th>Laptop</th>
+            <th class="text-right">Fiyat</th>
+            <th class="text-right">Ara Toplam</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ShoppingCart.ShoppingCartItems)
+        {
+            <tr>
+                <td class="text-left"><a asp-controller="ShoppingCart" asp-action="RemoveFromShoppingCart" asp-route-computerId="@item.Computer.ComputerId">Miktarı Azaltın</a></td>
+                <td class="text-center">@item.Amount</td>
+                <td class="text-left">@item.Computer.Name</td>
+                <td class="text-right">@item.Computer.Price.ToString("c")</td>
+                <td class="text-right">
+                    @((item.Amount * item.Computer.Price).ToString("c"))
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4" class="text-right">Toplam</td>
+            <td class="text-right">@Model.ShoppingCartTotal.ToString("c")</td>
+        </tr>
+    </tfoot>
+</table>
+
+<div class="text-center">
+    <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="ClearCart">Sepeti Temizle</a>
+    <a class="btn btn-primary" asp-controller="Order" asp-action="Checkout">Alışverişi Tamamla</a>
+</div>
