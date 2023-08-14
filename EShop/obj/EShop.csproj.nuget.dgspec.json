@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AKDENİZ STORY\\Source\\Repos\\EShop\\EShop.csproj": {}
+    "C:\\Users\\nuno\\Desktop\\razq-project\\mvc_e-commerce_capstone\\EShop\\EShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AKDENİZ STORY\\Source\\Repos\\EShop\\EShop.csproj": {
+    "C:\\Users\\nuno\\Desktop\\razq-project\\mvc_e-commerce_capstone\\EShop\\EShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AKDENİZ STORY\\Source\\Repos\\EShop\\EShop.csproj",
+        "projectUniqueName": "C:\\Users\\nuno\\Desktop\\razq-project\\mvc_e-commerce_capstone\\EShop\\EShop.csproj",
         "projectName": "EShop",
-        "projectPath": "C:\\Users\\AKDENİZ STORY\\Source\\Repos\\EShop\\EShop.csproj",
-        "packagesPath": "C:\\Users\\AKDENİZ STORY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AKDENİZ STORY\\Source\\Repos\\EShop\\obj\\",
+        "projectPath": "C:\\Users\\nuno\\Desktop\\razq-project\\mvc_e-commerce_capstone\\EShop\\EShop.csproj",
+        "packagesPath": "C:\\Users\\nuno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nuno\\Desktop\\razq-project\\mvc_e-commerce_capstone\\EShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AKDENİZ STORY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nuno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +71,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -83,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

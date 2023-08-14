@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\AKDENİZ STORY\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\AKDENİZ STORY\\.nuget\\packages"
+      "C:\\Users\\nuno\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\nuno\\.nuget\\packages"
     ]
   }
 }

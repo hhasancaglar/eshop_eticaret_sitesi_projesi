@@ -39,6 +39,16 @@
 </table>
 
 <div class="text-center">
-    <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="ClearCart">Sepeti Temizle</a>
-    <a class="btn btn-primary" asp-controller="Order" asp-action="Checkout">Alışverişi Tamamla</a>
+    @if (Model.ShoppingCart.ShoppingCartItems.Count > 0)
+    {
+        <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="ClearCart">Sepeti Temizle</a>
+        <a class="btn btn-primary" asp-controller="Order" asp-action="Checkout">Alışverişi Tamamla</a>
+
+    }
+    
+    @if(Model.ShoppingCart.ShoppingCartItems.Count < 1)
+    {
+        <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Sepete ürün eklemek için ana sayfaya git</a>
+    }
+
 </div>
